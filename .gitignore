@@ -1,0 +1,29 @@
+# 私人运行数据及密钥
+data/
+runtime/
+.env
+.env.*
+!.env.example
+config.local.*
+*.pem
+*.key
+*.db
+*.db-*
+*.sqlite*
+*.log
+# 本地环境和产物
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+dist/
+build/
+.pytest_cache/
+.idea/
+.vscode/
+backups/
+备份记录/
+output/
+Thumbs.db
+.DS_Store
