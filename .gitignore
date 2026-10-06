@@ -27,3 +27,20 @@ backups/
 output/
 Thumbs.db
 .DS_Store
+# Nested local environments, private uploads, reports and downloaded weights
+**/data/
+**/local_data/
+**/.venv/
+**/.mineru/
+**/.tools/
+**/runtime/
+**/.env*
+**/pytest-cache-files-*/
+**/*.gguf
+**/*.onnx
+**/*.safetensors
+**/*.zip
+金融测试集_100份/文件/01_真实公开材料/
+项目总工作报告.docx
+工作报告资料/
+协作工具/

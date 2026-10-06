@@ -1,0 +1,7 @@
+model:
+  source: local
+  small_backend: onnx
+  vlm:
+    engine: llama-cpp
+    server_url: ""
+    max_concurrency: 1

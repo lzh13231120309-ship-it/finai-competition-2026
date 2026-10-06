@@ -5,3 +5,13 @@
 *.css text eol=lf
 *.ps1 text eol=crlf
 *.ico binary
+*.pdf binary
+*.docx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.xlsx binary
+*.csv -text
+*.txt -text
+*.json -text
+*.bat text eol=crlf

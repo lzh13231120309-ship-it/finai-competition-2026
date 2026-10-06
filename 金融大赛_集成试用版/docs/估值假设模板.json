@@ -1,0 +1,23 @@
+{
+  "schema": "finai.valuation.assumptions.v1",
+  "issuer": null,
+  "industry": null,
+  "currency": null,
+  "valuation_date": null,
+  "base_period": null,
+  "basis": null,
+  "growth_rates": null,
+  "ebit_margin": null,
+  "tax_rate": null,
+  "da_ratio": null,
+  "capex_ratio": null,
+  "nwc_ratio": null,
+  "wacc": null,
+  "terminal_growth": null,
+  "shares_outstanding": null,
+  "net_debt": null,
+  "net_debt_basis": null,
+  "wacc_grid": null,
+  "terminal_growth_grid": null,
+  "comparables": []
+}

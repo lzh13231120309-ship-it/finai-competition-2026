@@ -1,0 +1,15 @@
+﻿issuer,metric,period,raw,unit,currency,scope,basis
+模拟制造甲,revenue,2023,1000000,元,CNY,合并,原报
+模拟制造甲,revenue_cost,2023,600000,元,CNY,合并,原报
+模拟制造甲,revenue,2024,1200000,元,CNY,合并,原报
+模拟制造甲,revenue_cost,2024,840000,元,CNY,合并,原报
+模拟制造甲,accounts_receivable,2023-year-end,100000,元,CNY,合并,原报
+模拟制造甲,accounts_receivable,2024-year-end,200000,元,CNY,合并,原报
+模拟制造甲,inventory,2023-year-end,60000,元,CNY,合并,原报
+模拟制造甲,inventory,2024-year-end,120000,元,CNY,合并,原报
+模拟制造甲,net_profit,2023,100000,元,CNY,合并,原报
+模拟制造甲,net_profit,2024,100000,元,CNY,合并,原报
+模拟制造甲,net_profit_parent,2023,80000,元,CNY,合并,原报
+模拟制造甲,net_profit_parent,2024,80000,元,CNY,合并,原报
+模拟制造甲,operating_cash_flow,2023,90000,元,CNY,合并,原报
+模拟制造甲,operating_cash_flow,2024,90000,元,CNY,合并,原报

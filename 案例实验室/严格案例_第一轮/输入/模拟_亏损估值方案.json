@@ -1,0 +1,52 @@
+{
+  "schema": "finai.valuation.assumptions.v1",
+  "issuer": "模拟制造甲",
+  "industry": "industrial",
+  "currency": "CNY",
+  "valuation_date": "2025-01-01",
+  "base_period": "2024",
+  "basis": "明确模拟预测参数，非公司事实",
+  "net_debt_basis": "明确模拟的净债务",
+  "growth_rates": [
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05
+  ],
+  "ebit_margin": -0.05,
+  "tax_rate": 0.25,
+  "da_ratio": 0.02,
+  "capex_ratio": 0.04,
+  "nwc_ratio": 0.15,
+  "wacc": 0.1,
+  "terminal_growth": 0.02,
+  "shares_outstanding": 100,
+  "net_debt": 10,
+  "wacc_grid": [
+    0.08,
+    0.1,
+    0.12
+  ],
+  "terminal_growth_grid": [
+    0.01,
+    0.02,
+    0.03
+  ],
+  "comparables": [
+    {
+      "name": "模拟同行乙",
+      "pe": 12,
+      "pb": 1.2,
+      "as_of": "2025-01-01",
+      "basis": "教学同业"
+    },
+    {
+      "name": "模拟同行丙",
+      "pe": 18,
+      "pb": 1.8,
+      "as_of": "2025-01-01",
+      "basis": "教学同业"
+    }
+  ]
+}

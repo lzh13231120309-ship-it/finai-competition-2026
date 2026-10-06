@@ -1,0 +1,5 @@
+#finance-dialog{width:calc(100vw - 32px);max-width:1600px;height:calc(100vh - 32px);max-height:none;padding:0;border:1px solid #c5d8cd;border-radius:14px;background:#f5f7f4;color:#1d3d2e;overflow:hidden}
+#finance-dialog::backdrop{background:rgba(13,27,22,.6)}
+.finance-bar{height:54px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;padding:10px 22px;background:#fff;border-bottom:1px solid #d8e2dc}
+.finance-bar button{padding:7px 16px;background:#244f3e;color:#fff;border:0;border-radius:7px;cursor:pointer}
+#finance-dialog iframe{display:block;width:100%;height:calc(100% - 54px);border:0;background:#f5f7f4}

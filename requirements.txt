@@ -1,10 +1,2 @@
-# 现有 Windows 运行环境中的直接依赖版本；新环境安装尚未验证
-fastapi==0.142.2
-uvicorn==0.54.0
-httpx==0.28.1
-python-multipart==0.0.32
-pydantic==2.13.5
-openpyxl==3.1.5
-pypdf==6.19.0
-python-docx==1.2.0
-python-pptx==1.0.2
+# Windows Python 3.13 deployment environment
+-r 第一阶段_金融提取/requirements-lock.txt

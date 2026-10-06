@@ -1,0 +1,10 @@
+issuer,metric,period,raw,unit,currency,scope,basis
+请填写公司全称,revenue,2024,,万元,CNY,合并,原报
+请填写公司全称,revenue,2023,,万元,CNY,合并,原报
+请填写公司全称,net_profit_parent,2024,,万元,CNY,合并,原报
+请填写公司全称,net_profit_parent_adjusted,2024,,万元,CNY,合并,原报
+请填写公司全称,operating_cash_flow,2024,,万元,CNY,合并,原报
+请填写公司全称,assets_total,2024-year-end,,万元,CNY,合并,原报
+请填写公司全称,liabilities_total,2024-year-end,,万元,CNY,合并,原报
+请填写公司全称,equity_total,2024-year-end,,万元,CNY,合并,原报
+请填写公司全称,equity_parent,2024-year-end,,万元,CNY,合并,原报

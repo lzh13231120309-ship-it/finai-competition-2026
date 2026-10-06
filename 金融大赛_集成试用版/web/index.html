@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>衡知 · 金融研究助手</title>
+<link rel="icon" type="image/svg+xml" href="/static/hengzhi.svg">
+<link rel="apple-touch-icon" href="/static/favicon.ico">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/financial-panel.css">
+<link rel="stylesheet" href="/static/hengzhi.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ===================== 左侧：任务栏 ===================== -->
+  <aside id="sidebar">
+    <div class="side-head">
+      <div class="brand">
+        <div class="brand-logo">衡</div>
+        <div class="brand-text">
+          <div class="brand-title">衡知</div>
+          <div class="brand-sub">你的金融研究助手</div>
+        </div>
+      </div>
+      <button id="btn-new-task" class="btn-new">
+        <svg viewBox="0 0 24 24" width="15" height="15"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        新建任务
+      </button>
+    </div>
+
+    <div class="side-search">
+      <input id="task-search" type="text" placeholder="搜索任务…" autocomplete="off">
+    </div>
+
+    <div class="side-label">任务</div>
+    <div id="task-list" class="task-list"></div>
+
+    <div class="side-foot">
+      <button id="btn-settings" class="btn-side">
+        <svg viewBox="0 0 24 24" width="15" height="15"><path d="M12 15.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 15a1.7 1.7 0 00.34 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-1.87-.34 1.7 1.7 0 00-1.03 1.56V21a2 2 0 11-4 0v-.09A1.7 1.7 0 007.9 19.3a1.7 1.7 0 00-1.87.34l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.7 1.7 0 003.6 15a1.7 1.7 0 00-1.56-1.03H2a2 2 0 110-4h.09A1.7 1.7 0 003.6 8.9a1.7 1.7 0 00-.34-1.87l-.06-.06a2 2 0 112.83-2.83l.06.06A1.7 1.7 0 008.9 4.6 1.7 1.7 0 009.93 3.04V3a2 2 0 114 0v.09A1.7 1.7 0 0015 4.6a1.7 1.7 0 001.87-.34l.06-.06a2 2 0 112.83 2.83l-.06.06A1.7 1.7 0 0019.4 8.9c.13.5.53.9 1.03 1.03H21a2 2 0 110 4h-.09A1.7 1.7 0 0019.4 15z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        设置
+      </button>
+      <div id="health" class="health">连接中…</div>
+    </div>
+  </aside>
+
+  <!-- ===================== 中间：对话区 ===================== -->
+  <main id="main">
+    <header id="topbar">
+      <button id="btn-toggle-side" class="icon-btn" title="收起/展开任务栏">
+        <svg viewBox="0 0 24 24" width="17" height="17"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <div class="top-title">
+        <div id="task-title" class="title-text">新任务</div>
+        <div id="task-meta" class="title-meta"></div>
+      </div>
+
+      <div class="top-actions">
+        <div id="running-badge" class="badge running hidden">
+          <span class="dot"></span><span id="running-text">运行中</span>
+        </div>
+        <div class="model-picker" id="model-picker">
+          <button id="model-btn" class="model-btn">
+            <span class="mp-dot"></span>
+            <span id="model-label">选择模型</span>
+            <svg viewBox="0 0 24 24" width="13" height="13"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <div id="model-menu" class="model-menu hidden"></div>
+        </div>
+        <button id="btn-clear" class="icon-btn" title="清空当前对话">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 7h16M9 7V5h6v2M6 7l1 13h10l1-13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div id="chat-scroll" class="chat-scroll">
+      <div id="chat" class="chat"></div>
+      <div id="welcome" class="welcome">
+        <div class="welcome-logo">衡</div>
+        <h1>你好，我是衡知</h1>
+        <p class="welcome-sub">把材料交给我，一起看清经营变化与价值。</p>
+        <div class="welcome-note">从一份公告、一份财报，或一个投资问题开始。</div>
+      </div>
+    </div>
+
+    <!-- 输入区 -->
+    <div class="composer-wrap">
+      <div id="drop-hint" class="drop-hint hidden">松开即可添加文件</div>
+      <div class="capabilities" aria-label="研究方式"><button class="capability" data-mode="extraction" data-prompt="请解读上传的金融公告，说明关键事项、数量金额与关注原因，在对话中给出清晰解释，并将详细依据整理成一份完整Word。" title="公告解读"><svg viewBox="0 0 24 24" width="17" height="17"><path d="M4 3h11l5 5v13H4z M14 3v6h6 M8 13h8 M8 17h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>公告解读</span></button><button class="capability" data-mode="analysis" data-prompt="请分析上传财报的经营变化、同比环比、盈利质量和现金流，用关键数据结合清晰解释，将详细分析和依据整理成一份完整Word。" title="财报分析"><svg viewBox="0 0 24 24" width="17" height="17"><path d="M4 20h16 M7 16V9 M12 16V4 M17 16v-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>财报分析</span></button><button class="capability" data-mode="valuation" data-prompt="请对上传公司的财务数据进行估值，资料不完整时依据历史与可比公司资料估计，明确区分事实与假设，清楚解释结果和缺失资料的影响，将分析、敏感性和依据整理成一份完整Word。" title="估值推演"><svg viewBox="0 0 24 24" width="17" height="17"><path d="M3 17l6-6 4 3 8-10 M15 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>估值推演</span></button></div>
+      <div id="attach-bar" class="attach-bar"></div>
+      <div class="composer">
+        <button id="btn-attach" class="icon-btn" title="添加文件">
+          <svg viewBox="0 0 24 24" width="17" height="17"><path d="M21.4 11.05l-8.5 8.5a5 5 0 01-7.07-7.07l8.5-8.5a3.5 3.5 0 014.95 4.95l-8.5 8.5a2 2 0 01-2.83-2.83l7.8-7.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <textarea id="input" rows="1" placeholder="想了解哪家公司？也可以先添加文件…"></textarea>
+        <button id="btn-send" class="btn-send" title="发送">
+          <svg viewBox="0 0 24 24" width="17" height="17"><path d="M4 12l16-8-6 8 6 8-16-8z" fill="currentColor"/></svg>
+        </button>
+        <button id="btn-stop" class="btn-stop hidden" title="停止生成">
+          <svg viewBox="0 0 24 24" width="15" height="15"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg>
+        </button>
+      </div>
+      <div class="composer-foot">
+        <span id="composer-hint">支持 图片 · PDF · Word · Excel · PPT · txt · md · csv · json</span>
+        <span id="token-hint" class="token-hint"></span>
+      </div>
+    </div>
+    <input id="file-input" type="file" multiple hidden>
+  </main>
+
+  <!-- ===================== 右侧：设置抽屉 ===================== -->
+  <div id="drawer-mask" class="drawer-mask hidden"></div>
+  <aside id="drawer" class="drawer">
+    <div class="drawer-head">
+      <div class="drawer-title">设置</div>
+      <button id="btn-close-drawer" class="icon-btn">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <nav class="tabs">
+      <button class="tab active" data-tab="model">模型</button>
+      <button class="tab" data-tab="general">通用</button>
+      <button class="tab" data-tab="mcp">MCP</button>
+      <button class="tab" data-tab="skills">技能</button>
+      <button class="tab" data-tab="kb">知识库</button>
+      <button class="tab" data-tab="about">关于</button>
+    </nav>
+    <div class="drawer-body">
+
+      <!-- 模型 -->
+      <section class="tabpane active" data-pane="model">
+        <div class="field">
+          <label>模型提供商</label>
+          <select id="cfg-provider"></select>
+          <div id="provider-hint" class="hint"></div>
+        </div>
+        <div class="field">
+          <label>API Key</label>
+          <div class="row">
+            <input id="cfg-apikey" type="password" placeholder="粘贴 API Key" autocomplete="off">
+            <button id="btn-save-key" class="btn-secondary">保存</button>
+          </div>
+          <div id="key-status" class="hint"></div>
+        </div>
+        <div class="field">
+          <label>Base URL <span class="tag">内置免填，可覆盖</span></label>
+          <div class="row">
+            <input id="cfg-baseurl" type="text" placeholder="留空则使用内置地址">
+            <button id="btn-reset-url" class="btn-secondary">还原</button>
+          </div>
+        </div>
+        <div class="field">
+          <label>模型</label>
+          <div class="row">
+            <input id="cfg-model" type="text" list="model-options" placeholder="模型 ID">
+            <button id="btn-fetch-models" class="btn-secondary">拉取列表</button>
+          </div>
+          <datalist id="model-options"></datalist>
+          <div id="models-hint" class="hint"></div>
+        </div>
+        <div class="field two">
+          <div>
+            <label>温度</label>
+            <input id="cfg-temp" type="number" min="0" max="2" step="0.1">
+          </div>
+          <div>
+            <label>最大输出 tokens</label>
+            <input id="cfg-maxtokens" type="number" min="256" step="256">
+          </div>
+        </div>
+        <div class="field">
+          <button id="btn-test-model" class="btn-primary">测试连接</button>
+          <div id="test-result" class="hint"></div>
+        </div>
+      </section>
+
+      <!-- 通用 -->
+      <section class="tabpane" data-pane="general">
+        <div class="field">
+          <label>系统提示词</label>
+          <textarea id="cfg-system" rows="5"></textarea>
+        </div>
+        <div class="field two">
+          <div>
+            <label>携带历史轮数</label>
+            <input id="cfg-rounds" type="number" min="0" max="100">
+          </div>
+          <div>
+            <label>单次最大执行步数（到点自动续跑，不会中断对话）</label>
+            <input id="cfg-steps" type="number" min="1" max="200">
+          </div>
+        </div>
+        <div class="field">
+          <label class="switch-line"><input id="cfg-autotitle" type="checkbox"> 自动为新任务命名</label>
+          <label class="switch-line"><input id="cfg-calculator" type="checkbox"> 启用计算工具（推荐）</label>
+          <label class="switch-line"><input id="cfg-knowledge" type="checkbox"> 启用知识库检索工具</label>
+          <label class="switch-line"><input id="cfg-skilltool" type="checkbox"> 启用技能读取工具</label>
+          <label class="switch-line"><input id="cfg-filereader" type="checkbox"> 启用附件读取工具</label>
+          <label class="switch-line"><input id="cfg-mcptool" type="checkbox"> 启用 MCP 工具</label>
+        </div>
+        <div class="field danger-zone">
+          <label>本机操作权限</label>
+          <label class="switch-line"><input id="cfg-sysaccess" type="checkbox"> 允许模型操作本机（读写文件 / 执行命令 / 删除）</label>
+          <div class="hint warn" id="sysaccess-warn">
+            ⚠️ 开启后，模型可以直接在你电脑上创建文件、运行命令、把文件移入废纸篓。
+            删除一律走废纸篓可恢复，高危命令（sudo／格式化磁盘／删系统目录）会被拒绝，
+            所有操作记入审计日志。但模型判断失误仍可能写错文件，请自行评估风险。
+          </div>
+          <label class="sub-label">默认产出目录</label>
+          <input id="cfg-outdir" type="text" placeholder="~/Desktop/AI产出">
+          <div class="hint">模型生成的文件默认存到这里（除非你在对话里指定了别的路径）。</div>
+        </div>
+        <div class="field">
+          <label>外观</label>
+          <div class="row">
+            <select id="cfg-theme">
+              <option value="light">浅色</option>
+              <option value="dark">深色</option>
+            </select>
+            <button id="btn-save-general" class="btn-primary">保存设置</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- MCP -->
+      <section class="tabpane" data-pane="mcp">
+        <div class="pane-intro">
+          接入 MCP（Model Context Protocol）服务器后，其工具会自动出现在 Agent 的可调用工具列表里。
+          服务器通过本地命令启动，例如 <code>npx -y @modelcontextprotocol/server-filesystem /tmp</code>。
+        </div>
+        <div id="mcp-list" class="list"></div>
+        <button id="btn-mcp-add" class="btn-secondary full">+ 添加 MCP 服务器</button>
+        <div id="mcp-editor" class="editor hidden">
+          <div class="field">
+            <label>名称（英文标识）</label>
+            <input id="mcp-name" type="text" placeholder="filesystem">
+          </div>
+          <div class="field">
+            <label>启动命令</label>
+            <input id="mcp-command" type="text" placeholder="npx">
+          </div>
+          <div class="field">
+            <label>参数（每行一个）</label>
+            <textarea id="mcp-args" rows="3" placeholder="-y&#10;@modelcontextprotocol/server-filesystem&#10;C:\Users\you\Documents"></textarea>
+          </div>
+          <div class="field">
+            <label>环境变量（每行 KEY=VALUE）</label>
+            <textarea id="mcp-env" rows="2" placeholder="API_KEY=xxxx"></textarea>
+          </div>
+          <div class="field">
+            <label class="switch-line"><input id="mcp-enabled" type="checkbox" checked> 启用</label>
+            <label class="switch-line"><input id="mcp-autostart" type="checkbox"> 启动应用时自动连接</label>
+          </div>
+          <div class="row">
+            <button id="btn-mcp-save" class="btn-primary">保存</button>
+            <button id="btn-mcp-test" class="btn-secondary">测试连接</button>
+            <button id="btn-mcp-cancel" class="btn-ghost">取消</button>
+          </div>
+          <div id="mcp-result" class="hint"></div>
+        </div>
+      </section>
+
+      <!-- 技能 -->
+      <section class="tabpane" data-pane="skills">
+        <div class="pane-intro">
+          技能目录：<code id="skill-dir"></code>。每个技能是一个包含 <code>SKILL.md</code> 的文件夹；
+          Agent 会先看到技能名称与描述，需要时再通过工具读取全文（渐进式披露，省上下文）。
+        </div>
+        <div id="skill-list" class="list"></div>
+        <div class="row">
+          <button id="btn-skill-import" class="btn-secondary">从路径导入</button>
+          <button id="btn-skill-new" class="btn-secondary">新建技能</button>
+          <button id="btn-skill-scan" class="btn-ghost">刷新</button>
+        </div>
+        <div id="skill-editor" class="editor hidden">
+          <div class="field">
+            <label>技能名称</label>
+            <input id="skill-name" type="text" placeholder="financial-report-check">
+          </div>
+          <div class="field">
+            <label>描述（何时使用）</label>
+            <input id="skill-desc" type="text" placeholder="当需要对研报做数据核对时使用">
+          </div>
+          <div class="field">
+            <label>技能内容（Markdown）</label>
+            <textarea id="skill-content" rows="8" placeholder="## 步骤&#10;1. …"></textarea>
+          </div>
+          <div class="row">
+            <button id="btn-skill-create" class="btn-primary">创建</button>
+            <button id="btn-skill-cancel" class="btn-ghost">取消</button>
+          </div>
+        </div>
+        <div id="skill-peek" class="peek hidden">
+          <div class="peek-head"><span id="peek-name"></span><button id="btn-peek-close" class="icon-btn">✕</button></div>
+          <pre id="peek-body"></pre>
+        </div>
+      </section>
+
+      <!-- 知识库 -->
+      <section class="tabpane" data-pane="kb">
+        <div class="pane-intro">
+          把资料放进 <code id="kb-dir"></code> 下的文件夹（或直接上传），点「重建索引」后 Agent 就能检索引用。
+          检索使用本地 BM25 算法，完全离线。
+        </div>
+        <div id="kb-list" class="list"></div>
+        <div class="row">
+          <input id="kb-new-name" type="text" placeholder="新知识库名称">
+          <button id="btn-kb-create" class="btn-secondary">创建</button>
+        </div>
+        <div class="row">
+          <button id="btn-kb-index-all" class="btn-primary">重建全部索引</button>
+          <button id="btn-kb-refresh" class="btn-ghost">刷新</button>
+        </div>
+        <div class="field">
+          <label>检索测试</label>
+          <div class="row">
+            <input id="kb-query" type="text" placeholder="输入关键词试试检索效果">
+            <button id="btn-kb-search" class="btn-secondary">检索</button>
+          </div>
+          <div id="kb-search-result" class="search-result"></div>
+        </div>
+      </section>
+
+      <!-- 关于 -->
+      <section class="tabpane" data-pane="about">
+        <div class="about">
+          <h3>衡知 · 金融研究助手</h3>
+          <p>依据材料解释经营变化，推演估值假设，并生成可核验的分析报告。</p>
+          <ul>
+            <li><b>数据位置</b>：<code>data\</code>（配置、会话、上传文件、知识库、日志、回收站）</li>
+            <li><b>运行环境</b>：Windows x64 · 自带 Python 3.13 运行时，无需另行安装</li>
+            <li><b>API Key</b>：仅保存在本机 <code>data\config.json</code>，不会外传</li>
+            <li><b>模型接入</b>：所有厂商统一走 OpenAI 兼容协议，切换模型无需改动代码</li>
+            <li><b>可追溯</b>：每次工具调用都会写入会话记录，便于复盘与复现</li>
+          </ul>
+          <p class="dim">版本 <span id="about-version">1.0.0</span> · 按「⌘/Ctrl + Enter」也可发送消息</p>
+        </div>
+      </section>
+
+    </div>
+  </aside>
+
+  <div id="toast-wrap" class="toast-wrap"></div>
+</div>
+<script src="/static/app.js"></script>
+<script src="/static/financial-panel.js"></script>
+</body>
+</html>

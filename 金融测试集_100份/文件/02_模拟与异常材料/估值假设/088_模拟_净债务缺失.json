@@ -1,0 +1,61 @@
+{
+  "schema": "finai.valuation.assumptions.v1",
+  "issuer": "模拟公司A",
+  "industry": "industrial",
+  "currency": "CNY",
+  "valuation_date": "2025-01-01",
+  "base_period": "2024",
+  "basis": "模拟教学假设，不是实际预测；增长和利润率由测试设计者给定",
+  "growth_rates": [
+    0.05,
+    0.05,
+    0.04,
+    0.03,
+    0.03
+  ],
+  "ebit_margin": 0.15,
+  "tax_rate": 0.25,
+  "da_ratio": 0.02,
+  "capex_ratio": 0.04,
+  "nwc_ratio": 0.15,
+  "wacc": 0.1,
+  "terminal_growth": 0.02,
+  "shares_outstanding": 1000000,
+  "net_debt_basis": "模拟企业净债务教学假设，不来自资产负债表自动拼凑",
+  "wacc_grid": [
+    0.08,
+    0.09,
+    0.1,
+    0.11,
+    0.12
+  ],
+  "terminal_growth_grid": [
+    0.01,
+    0.02,
+    0.03
+  ],
+  "comparables": [
+    {
+      "name": "模拟可比公司1",
+      "pe": 12,
+      "pb": 1.5,
+      "as_of": "2025-01-01",
+      "basis": "模拟同行业同口径倍数"
+    },
+    {
+      "name": "模拟可比公司2",
+      "pe": 15,
+      "pb": 1.8,
+      "as_of": "2025-01-01",
+      "basis": "模拟同行业同口径倍数"
+    },
+    {
+      "name": "模拟可比公司3",
+      "pe": 18,
+      "pb": 2.1,
+      "as_of": "2025-01-01",
+      "basis": "模拟同行业同口径倍数"
+    }
+  ],
+  "fixture_id": 7
+}

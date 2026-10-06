@@ -1,0 +1,352 @@
+{
+  "description": "公开茅台年度摘要及第4页表格派生图片，作为回归测试引用材料",
+  "pdf_sha256": "a7210a641289973f3f7fc4d4a2f3097f18346c5c621af1cc9960e4c9131642db",
+  "image_sha256": "da1c200ab9f2a8198d59a220d7d7b3e3834fad2f0d514b4372b554a053bb398f",
+  "upstream_reference": [
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "assets_total",
+      "value": "298944579918.70",
+      "unit": "元",
+      "period": "2024",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "assets_total",
+      "value": "272699660092.25",
+      "unit": "元",
+      "period": "2023",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "assets_total",
+      "value": "254500826096.02",
+      "unit": "元",
+      "period": "2022",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "equity_parent",
+      "value": "233105984399.47",
+      "unit": "元",
+      "period": "2024",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "equity_parent",
+      "value": "215668571607.43",
+      "unit": "元",
+      "period": "2023",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "equity_parent",
+      "value": "197480041239.46",
+      "unit": "元",
+      "period": "2022",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "revenue",
+      "value": "170899152276.34",
+      "unit": "元",
+      "period": "2024",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "revenue",
+      "value": "147693604994.14",
+      "unit": "元",
+      "period": "2023",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "revenue",
+      "value": "124099843771.99",
+      "unit": "元",
+      "period": "2022",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent",
+      "value": "86228146421.62",
+      "unit": "元",
+      "period": "2024",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent",
+      "value": "74734071550.75",
+      "unit": "元",
+      "period": "2023",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent",
+      "value": "62717467870.12",
+      "unit": "元",
+      "period": "2022",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent_adjusted",
+      "value": "86240905977.42",
+      "unit": "元",
+      "period": "2024",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent_adjusted",
+      "value": "74752564425.52",
+      "unit": "元",
+      "period": "2023",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent_adjusted",
+      "value": "62792896829.57",
+      "unit": "元",
+      "period": "2022",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "operating_cash_flow",
+      "value": "92463692168.43",
+      "unit": "元",
+      "period": "2024",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "operating_cash_flow",
+      "value": "66593247721.09",
+      "unit": "元",
+      "period": "2023",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "operating_cash_flow",
+      "value": "36698595830.03",
+      "unit": "元",
+      "period": "2022",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "roe_weighted",
+      "value": "36.02",
+      "unit": "%",
+      "period": "2024",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "roe_weighted",
+      "value": "34.19",
+      "unit": "%",
+      "period": "2023",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "roe_weighted",
+      "value": "30.26",
+      "unit": "%",
+      "period": "2022",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "eps_basic",
+      "value": "68.64",
+      "unit": "元/股",
+      "period": "2024",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "eps_basic",
+      "value": "59.49",
+      "unit": "元/股",
+      "period": "2023",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "eps_basic",
+      "value": "49.93",
+      "unit": "元/股",
+      "period": "2022",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "eps_diluted",
+      "value": "68.64",
+      "unit": "元/股",
+      "period": "2024",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "eps_diluted",
+      "value": "59.49",
+      "unit": "元/股",
+      "period": "2023",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "eps_diluted",
+      "value": "49.93",
+      "unit": "元/股",
+      "period": "2022",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "revenue",
+      "value": "45775517043.29",
+      "unit": "元",
+      "period": "2024-Q1",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "revenue",
+      "value": "36155460624.46",
+      "unit": "元",
+      "period": "2024-Q2",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "revenue",
+      "value": "38845154206.94",
+      "unit": "元",
+      "period": "2024-Q3",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "revenue",
+      "value": "50123020401.65",
+      "unit": "元",
+      "period": "2024-Q4",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent",
+      "value": "24065262374.15",
+      "unit": "元",
+      "period": "2024-Q1",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent",
+      "value": "17630348609.22",
+      "unit": "元",
+      "period": "2024-Q2",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent",
+      "value": "19131941135.14",
+      "unit": "元",
+      "period": "2024-Q3",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent",
+      "value": "25400594303.11",
+      "unit": "元",
+      "period": "2024-Q4",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent_adjusted",
+      "value": "24051471185.69",
+      "unit": "元",
+      "period": "2024-Q1",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent_adjusted",
+      "value": "17618626634.30",
+      "unit": "元",
+      "period": "2024-Q2",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent_adjusted",
+      "value": "19108543634.77",
+      "unit": "元",
+      "period": "2024-Q3",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "net_profit_parent_adjusted",
+      "value": "25462264522.66",
+      "unit": "元",
+      "period": "2024-Q4",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "operating_cash_flow",
+      "value": "9187422415.09",
+      "unit": "元",
+      "period": "2024-Q1",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "operating_cash_flow",
+      "value": "27434411397.54",
+      "unit": "元",
+      "period": "2024-Q2",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "operating_cash_flow",
+      "value": "7799552404.82",
+      "unit": "元",
+      "period": "2024-Q3",
+      "page": 4
+    },
+    {
+      "document": "moutai_2024_summary.pdf",
+      "name": "operating_cash_flow",
+      "value": "48042305950.98",
+      "unit": "元",
+      "period": "2024-Q4",
+      "page": 4
+    }
+  ],
+  "url": "https://static.cninfo.com.cn/finalpage/2025-04-03/1222993909.PDF"
+}
