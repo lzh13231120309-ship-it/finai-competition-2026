@@ -17,6 +17,12 @@
 3. 双击 **启动衡知.command**，自动打开 <http://127.0.0.1:17904/>。
 4. 停止服务双击 **停止衡知.command**；单独跑安装检查双击 **运行检查.command**。
 
+也可以做成原生桌面应用，双击即用、没有终端窗口：
+
+```bash
+cd macos/HengzhiDesktop && ./build_app.sh    # 产出 ~/Applications/衡知.app
+```
+
 功能与Windows版一致（选题1、2、4全部可用，本地推理在Apple Silicon上走Metal加速）。细节与注意事项见 [macOS使用说明](macOS使用说明.md)。
 
 ## 开发入口
