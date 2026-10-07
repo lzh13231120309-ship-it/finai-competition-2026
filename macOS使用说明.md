@@ -67,9 +67,15 @@ Windows 的 `.bat` / `.ps1` 脚本**原样保留**，两个平台可以共存，
 | 其中 `jieba`（无官方 wheel，需源码编译） | 自动编译成功 |
 | 其中 `win32_setctime`（Windows 专用包） | 可正常安装，在 macOS 上是无害的空操作 |
 | 单元测试 `金融大赛_集成试用版/tests` + `第一阶段_金融提取/tests` | **132 项全部通过** |
-| 集成版 Web 服务 | 启动正常，主页 HTTP 200 |
-| 健康检查 `/finance/api/health` | 返回 `{"ok":true,"local_only":true,"mineru_version":"4.0.10","uploads_to_github":false}` |
+| `运行检查.command` | 通过：MinerU-4_models_onnx、MinerU2.5-Pro-2605-1.2B-GGUF、Qwen 指纹三项全部就绪 |
+| GPU 探测 `llama-server --list-devices` | `MTL0: Apple M5 (12124 MiB)` + `BLAS: Accelerate`，Metal 加速可用 |
+| `启动衡知.command` 完整启动 | 成功：本地推理服务与 Web 服务均就绪，模型 2.3 秒加载完成 |
+| 集成版 Web 服务 | 主页 HTTP 200；`/finance/api/health` 返回 `{"ok":true,"local_only":true,"mineru_version":"4.0.10","uploads_to_github":false}` |
+| 真实推理调用 | 通过 `/v1/chat/completions` 提问，模型正常返回结果（Qwen3-4B，Q4_K_M，16384 上下文） |
 | `停止衡知.command` | 身份匹配时正确停止并清理 pid；身份不匹配时拒绝关闭；有提取任务未结束时拒绝关闭 |
+
+安装完成后 `runtime/` 目录约 5.9 GB（含虚拟环境约 1.6 GB、模型约 4.3 GB）。
+
 
 
 ## 四、与 Windows 版的差异与注意点
