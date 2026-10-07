@@ -14,8 +14,13 @@ URL = 'http://127.0.0.1:17907'
 MODEL_NAME = 'finai-qwen3-4b'
 
 def executable_path():
+    """定位 mineru-llama-cpp 附带的 llama.cpp 服务端二进制。
+
+    Windows 上为 llama-server.exe，macOS / Linux 上为 llama-server。
+    """
     import sysconfig
-    return Path(sysconfig.get_path('purelib')) / 'mineru_llama_cpp' / 'bin' / 'llama-server.exe'
+    name = 'llama-server.exe' if os.name == 'nt' else 'llama-server'
+    return Path(sysconfig.get_path('purelib')) / 'mineru_llama_cpp' / 'bin' / name
 
 
 def request(path):
