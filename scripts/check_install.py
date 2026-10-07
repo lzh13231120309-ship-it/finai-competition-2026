@@ -17,6 +17,6 @@ def main():
     with model.open('rb') as f:digest=hashlib.file_digest(f,'sha256').hexdigest()
     if digest!='7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5':raise RuntimeError('Qwen模型指纹不符')
     import local_reasoning
-    if not local_reasoning.executable_path().is_file():raise RuntimeError('未找到llama-server.exe')
+    if not local_reasoning.executable_path().is_file():raise RuntimeError(f'未找到本地推理引擎：{local_reasoning.executable_path()}')
     print('依赖、MinerU资源与Qwen指纹检查通过；这不等于真实Agent推理与OCR已经验收。')
 if __name__=='__main__':main()
