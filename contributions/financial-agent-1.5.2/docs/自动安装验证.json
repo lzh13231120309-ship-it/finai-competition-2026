@@ -1,0 +1,22 @@
+{
+  "mcp": [
+    {
+      "name": "financial-doc-extractor",
+      "connected": true,
+      "tools": 5,
+      "sample_call_passed": true
+    },
+    {
+      "name": "fin-excel-audit",
+      "connected": true,
+      "tools": 7,
+      "sample_call_passed": true
+    }
+  ],
+  "skills": 37,
+  "knowledge_notes": 141,
+  "credentials": "请在设置中填写自己的API Key，或配置自己的本地模型",
+  "full_launcher_success": true,
+  "main_helpers_imported": true,
+  "no_keys_preconfigured": true
+}

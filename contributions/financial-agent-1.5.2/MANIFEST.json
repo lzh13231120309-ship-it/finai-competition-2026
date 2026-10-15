@@ -1,21 +1,21 @@
 {
   "version": "1.5.2",
-  "distribution": "source-only",
+  "distribution": "source-with-automatic-extensions",
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "6caaf84c6d1b8a2a38b71e0b5f7f7e32905e70b81112da04a3e1561a3788435e",
-      "bytes": 203
+      "sha256": "2b152e63481fe21a536e1e7be782b99da9f7293ffa13f8856ca6652bf75e4f21",
+      "bytes": 218
     },
     {
       "path": "README.md",
-      "sha256": "442bd3ac19507e3787ab7e3189b550aba6d31a526049cc3c65d4d9fe94ab9c8e",
-      "bytes": 3188
+      "sha256": "84bc6eee5b1893238ea787caf0f9cd6cded5a67821ee96d62c96d517256db961",
+      "bytes": 4639
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "66f4baac1b02b625e65ba1aed630b1101bcc8dba86e87f1a86f34b0c6ab6f142",
-      "bytes": 1021
+      "sha256": "57baa23a4b7bbc6bec1707ea0a8d765872eb6d86ee04354c25230e53866b73ff",
+      "bytes": 1245
     },
     {
       "path": "docs/dependency-licenses.json",
@@ -29,8 +29,8 @@
     },
     {
       "path": "docs/发布验收.md",
-      "sha256": "c5359073fa2df8735cb5ae640b1ec19f99d75a5deef321cd9fd960ebf7a9c723",
-      "bytes": 2170
+      "sha256": "69117a6b4430465399c558198613d013555be3233804232eab1caf68e9d1a6db",
+      "bytes": 2541
     },
     {
       "path": "docs/真实模型开发案例.json",
@@ -41,6 +41,11 @@
       "path": "docs/空白环境启动验证.json",
       "sha256": "81aec74ca974639e17625b1730b07bd120055403b1904d131770a34e583df3d5",
       "bytes": 278
+    },
+    {
+      "path": "docs/自动安装验证.json",
+      "sha256": "874c7e3f25d159def74b01f78ca38dedeabf30f6cc13b02086e29327b327b2f9",
+      "bytes": 501
     },
     {
       "path": "docs/速度档位使用说明.md",
@@ -1023,6 +1028,61 @@
       "bytes": 1325
     },
     {
+      "path": "integrations/financial-doc-extractor/README.md",
+      "sha256": "6ae45345184e201d065bac1d539754cc0e91d59514a60ce963a7c36852086d00",
+      "bytes": 832
+    },
+    {
+      "path": "integrations/financial-doc-extractor/THIRD_PARTY.md",
+      "sha256": "a6c0900b7d45372d79dbb3b17b951c5cb7337e1186e560b544e4c5c5617fcdd1",
+      "bytes": 1434
+    },
+    {
+      "path": "integrations/financial-doc-extractor/VERIFICATION.md",
+      "sha256": "8eadcc062d07639eda7bd4032394da029d17c223194956fca53b494f2fae59c3",
+      "bytes": 685
+    },
+    {
+      "path": "integrations/financial-doc-extractor/audit.py",
+      "sha256": "11640d1424aa44c271e1465072d3848ac055005a5ed5092a82440f5c37845ac5",
+      "bytes": 1260
+    },
+    {
+      "path": "integrations/financial-doc-extractor/cli.py",
+      "sha256": "ff6e927bca211fb4cb5ead5cc403e97758675e5a949781f6ed0ff7d3b673abe7",
+      "bytes": 2021
+    },
+    {
+      "path": "integrations/financial-doc-extractor/engine.py",
+      "sha256": "b84d7de9c41e4303421cf7b47d5bf256a022a194748a3eaa4e409ca2833d8cf8",
+      "bytes": 17409
+    },
+    {
+      "path": "integrations/financial-doc-extractor/ocr_vision.swift",
+      "sha256": "8a0bffa701725796322e9fef8d8e00b8744738ab177747679cbe656e1d268b28",
+      "bytes": 986
+    },
+    {
+      "path": "integrations/financial-doc-extractor/pdf_reader.py",
+      "sha256": "8e919f8298270c3fd07fe01d7629f3e1490f47603470be7d973e2180f4fa9534",
+      "bytes": 10019
+    },
+    {
+      "path": "integrations/financial-doc-extractor/requirements.txt",
+      "sha256": "8f2765f0e3ec6202a31a8b9e6496b16b60a6391e87a1f2e4b28efa9b05b1cf90",
+      "bytes": 48
+    },
+    {
+      "path": "integrations/financial-doc-extractor/schemas.json",
+      "sha256": "d9cbbc767cacaae1088d4378e86784ad00377c12d9f7deb35086e5b7c33e6838",
+      "bytes": 2956
+    },
+    {
+      "path": "integrations/financial-doc-extractor/server.py",
+      "sha256": "e435997de2974e3e1ae3c73bff6c7ea927a305d8d560fcb11008f6845571ae44",
+      "bytes": 6240
+    },
+    {
       "path": "macos/FinAgentApp/main.swift",
       "sha256": "16d6f161eadaa4197c585bb126fb402be3f80ef5c22511d668700ba3d1632908",
       "bytes": 24548
@@ -1053,19 +1113,24 @@
       "bytes": 180
     },
     {
+      "path": "scripts/bootstrap.py",
+      "sha256": "061b7987b855367e77f27d6e7b9149921aabd4a3b4ef43b961e32c6f56a286c0",
+      "bytes": 6922
+    },
+    {
       "path": "scripts/check_release.py",
-      "sha256": "25a71967ba33b9703857c165c2666590505b02f67303e855432e6a7e4c63b657",
-      "bytes": 1874
+      "sha256": "3d37f48c5f8ec4fd758ef180b5451e6df146de80c8e27631d2d76dea09328148",
+      "bytes": 1890
     },
     {
       "path": "scripts/setup_excel_mcp.py",
-      "sha256": "80128165f715eb04c01e084b2724ae860c1e8c297865d25c537a85cd1556fce7",
-      "bytes": 1403
+      "sha256": "511905eb623afc70918517e06cb34cdbc8a88df472ffcfc33f9305cf77cf6583",
+      "bytes": 261
     },
     {
       "path": "scripts/start.py",
-      "sha256": "4343546f0ccf9e300f50dee8e193bffa39029467f6681abbcadd5f0f737faad6",
-      "bytes": 2527
+      "sha256": "bef99fad33e554a7c584b32b5daba7a292d5dd1379f87a284533b010623a08b1",
+      "bytes": 2666
     },
     {
       "path": "seed/knowledge/三表勾稽与指标口径/01-勾稽恒等式清单.md",
@@ -1366,6 +1431,11 @@
       "path": "seed/knowledge/离线金融知识-使用与来源/07-知识覆盖范围和检索失败处理.md",
       "sha256": "2a4c05f7a763d7e13c8437ce629ef034e3a9a9c639d1674a2ad53ff2ab51d21e",
       "bytes": 1775
+    },
+    {
+      "path": "seed/knowledge/离线金融知识-使用与来源/08-原始通知与现场网络条件.md",
+      "sha256": "2236133caf8e625368f18b2843d9dbf87f6d9d01a37eab071131f059f904c787",
+      "bytes": 1088
     },
     {
       "path": "seed/knowledge/离线金融知识-研报核查与评价/01-研报核查的对象与结论边界.md",
@@ -1819,8 +1889,8 @@
     },
     {
       "path": "seed/skills/fin-3-statement-model/SKILL.md",
-      "sha256": "78192925356d2b3f2b4f0e65eca003b8c6fd5fdb0065f1801d2e921529a85cd6",
-      "bytes": 2406
+      "sha256": "c9d116ab2dcc31c0a6abba51e821e5ec921b40cef5eea0f775bfefd1cfc4bdf1",
+      "bytes": 2496
     },
     {
       "path": "seed/skills/fin-3-statement-model/upstream/SKILL.md",
@@ -1854,8 +1924,8 @@
     },
     {
       "path": "seed/skills/fin-audit-xls/SKILL.md",
-      "sha256": "5df551ec92ab6f5283bfd9c1bce37320df81b027b1fdda1fa5b74a5ce160548f",
-      "bytes": 2419
+      "sha256": "75e4f49eca9614472eb9386fad46494b86028eb410d8557c519b518ad1aa869a",
+      "bytes": 2509
     },
     {
       "path": "seed/skills/fin-audit-xls/upstream/SKILL.md",
@@ -1874,8 +1944,8 @@
     },
     {
       "path": "seed/skills/fin-clean-data-xls/SKILL.md",
-      "sha256": "7722f1e069681f626ec4060c51127a326de65a33a1af21f56bbae8cfdf42f95f",
-      "bytes": 2398
+      "sha256": "73781f1cde1d06934cb00c4ee8ff28fe38fac7f26fa5f0f5c68af4e18096b5ea",
+      "bytes": 2488
     },
     {
       "path": "seed/skills/fin-clean-data-xls/upstream/SKILL.md",
@@ -1894,8 +1964,8 @@
     },
     {
       "path": "seed/skills/fin-competitive-analysis/SKILL.md",
-      "sha256": "96491ed38bc4ede22700e451ba5a207c7027d3d449c41bc51c3303c8d67c2e5c",
-      "bytes": 2410
+      "sha256": "f830a6b1b0890bbe21e12de4674506fcf9f87a03cd8cbd02a35157ad8f4d6a45",
+      "bytes": 2500
     },
     {
       "path": "seed/skills/fin-competitive-analysis/upstream/SKILL.md",
@@ -1924,8 +1994,8 @@
     },
     {
       "path": "seed/skills/fin-comps-analysis/SKILL.md",
-      "sha256": "dafc0b62994ae4d47d312e377d673972c030b31493671651545aee2eeecc095e",
-      "bytes": 2390
+      "sha256": "3ae108227d89ae81c5976bbf9e23e7e41d4d5f162b7535ca409aef745e0fb669",
+      "bytes": 2480
     },
     {
       "path": "seed/skills/fin-comps-analysis/upstream/SKILL.md",
@@ -1944,8 +2014,8 @@
     },
     {
       "path": "seed/skills/fin-data-quality/SKILL.md",
-      "sha256": "0e151e1cb6e1e3dbdb83a8610767fae5662c1ca036ee9a005064f5bdf85e7829",
-      "bytes": 2420
+      "sha256": "7541d430a7a8453deff1a0f512d056c3f19c43ea502a511529b11828283d25bc",
+      "bytes": 2510
     },
     {
       "path": "seed/skills/fin-data-quality/upstream/SKILL.md",
@@ -1964,8 +2034,8 @@
     },
     {
       "path": "seed/skills/fin-dcf-model/SKILL.md",
-      "sha256": "5f6b48f70708091b44799cdd100d2160ac82b262e77aeb80206e2bb05c912908",
-      "bytes": 2373
+      "sha256": "c8416108934b3c05dab8926280308ae766bf4f0f745f669744b01c2f65166dbd",
+      "bytes": 2463
     },
     {
       "path": "seed/skills/fin-dcf-model/upstream/SKILL.md",
@@ -1999,8 +2069,8 @@
     },
     {
       "path": "seed/skills/fin-dd-checklist/SKILL.md",
-      "sha256": "a4937dd60bbadabf39dda6bcbbd895e27f3a539005f908aefa0e7f5f6c8bdf0e",
-      "bytes": 2384
+      "sha256": "9901b9d85415e6eeafa04b42713773244867e5f459b5b6bd19907645abe858f4",
+      "bytes": 2474
     },
     {
       "path": "seed/skills/fin-dd-checklist/upstream/SKILL.md",
@@ -2019,8 +2089,8 @@
     },
     {
       "path": "seed/skills/fin-earnings-analysis/SKILL.md",
-      "sha256": "2432fa5140435b5fb356569009cb25a5d9bd8340e0378c074ccfd155d83f06bb",
-      "bytes": 2395
+      "sha256": "514807ca5d0b4e1609432e775ddeedd27f7924ff572d327faef6dcbeacf9c33e",
+      "bytes": 2485
     },
     {
       "path": "seed/skills/fin-earnings-analysis/upstream/SKILL.md",
@@ -2054,8 +2124,8 @@
     },
     {
       "path": "seed/skills/fin-earnings-preview/SKILL.md",
-      "sha256": "28b1fa74da846a1da1b568138e809e7bf6cdafe8ede40ff1e1c22798316e442c",
-      "bytes": 2409
+      "sha256": "5c5e083ff1f31172b411033fe38f4db12590a0dba4593a080390d1a9be5563f9",
+      "bytes": 2499
     },
     {
       "path": "seed/skills/fin-earnings-preview/upstream/SKILL.md",
@@ -2074,8 +2144,8 @@
     },
     {
       "path": "seed/skills/fin-financial-statements/SKILL.md",
-      "sha256": "bbf05760f51a7b001378c6059564f92623a1fc0491e975f33c62afae723e8666",
-      "bytes": 2404
+      "sha256": "c1e217f757bedf4130ec8bffcf7683b84c1ccfc5aa3d71644981754025db1c2a",
+      "bytes": 2494
     },
     {
       "path": "seed/skills/fin-financial-statements/upstream/SKILL.md",
@@ -2099,8 +2169,8 @@
     },
     {
       "path": "seed/skills/fin-ib-check-deck/SKILL.md",
-      "sha256": "37900cd9fc6a72d4b74ac83ca6452f72151e0d59534656e332f5317134937fcd",
-      "bytes": 2423
+      "sha256": "1160f0c5e1ee8e6987e2ab76c8397efb88f985999e23fdd4b380489fd672cfb7",
+      "bytes": 2513
     },
     {
       "path": "seed/skills/fin-ib-check-deck/upstream/SKILL.md",
@@ -2134,8 +2204,8 @@
     },
     {
       "path": "seed/skills/fin-ic-memo/SKILL.md",
-      "sha256": "fe9d9ff592585329899f829ddd93800a32be4eace32eefd66bf3d407c41e84e7",
-      "bytes": 2377
+      "sha256": "209e6e58bfc0840bb45807a1a99c3d2eae530ea3398f6cf710aec5cb1db4def6",
+      "bytes": 2467
     },
     {
       "path": "seed/skills/fin-ic-memo/upstream/SKILL.md",
@@ -2154,8 +2224,8 @@
     },
     {
       "path": "seed/skills/fin-initiating-coverage/SKILL.md",
-      "sha256": "d9403110158c54d4d2e8d10897087b8787c53e4eb0bae1a667b3da6be4eb1cef",
-      "bytes": 2382
+      "sha256": "870b71a4f6333055812b44a13b07162dfda1eb237a4791ca4beed1b7de42fc65",
+      "bytes": 2472
     },
     {
       "path": "seed/skills/fin-initiating-coverage/upstream/SKILL.md",
@@ -2214,8 +2284,8 @@
     },
     {
       "path": "seed/skills/fin-model-update/SKILL.md",
-      "sha256": "48a9c7e545e25542346548ac897810ac83c2aee3f880655358d62ff72b625d51",
-      "bytes": 2396
+      "sha256": "4978fa03253d70da4bfe1e89837394a30b7776b69c761c3c046852e96099daa1",
+      "bytes": 2486
     },
     {
       "path": "seed/skills/fin-model-update/upstream/SKILL.md",
@@ -2234,8 +2304,8 @@
     },
     {
       "path": "seed/skills/fin-qualitative-valuation/SKILL.md",
-      "sha256": "ccc982727b7aee43131e4a82cc295323fcef7d8222f6143ebe3bbc520a0ac5f5",
-      "bytes": 2417
+      "sha256": "a0cf7310e23fb545287be38dd2a564653b4a4be83dd3d34ed26a8d6007142fd4",
+      "bytes": 2507
     },
     {
       "path": "seed/skills/fin-qualitative-valuation/upstream/SKILL.md",
@@ -2254,8 +2324,8 @@
     },
     {
       "path": "seed/skills/fin-quantitative-valuation/SKILL.md",
-      "sha256": "e0142aa3359e560dd1af9846eb87e41f2a1fb6d1dc506a555d2be0dd587d3ce0",
-      "bytes": 2388
+      "sha256": "64b650cde9c8867bbf73c5bd61dff66ea626a6542d784ab75c8e477c8899cb1d",
+      "bytes": 2478
     },
     {
       "path": "seed/skills/fin-quantitative-valuation/upstream/SKILL.md",
@@ -2279,8 +2349,8 @@
     },
     {
       "path": "seed/skills/fin-reference-data/SKILL.md",
-      "sha256": "0e1f531a66f2354a18b5f6acbd6e00c0b94039e9831e1e117bbfab57d2e4f880",
-      "bytes": 2417
+      "sha256": "d210fc08ac51cbf0d106d3207b80ec0d00b010651f903e938f285acb64d936ff",
+      "bytes": 2507
     },
     {
       "path": "seed/skills/fin-reference-data/upstream/SKILL.md",
@@ -2299,8 +2369,8 @@
     },
     {
       "path": "seed/skills/fin-sector-overview/SKILL.md",
-      "sha256": "cc48c842254f8834f5af252298bcfc041cf5743d3040600e128f5a8f57aa5d06",
-      "bytes": 2384
+      "sha256": "d12d07386260b0862515ba8927a71c93978aa9fe32f00e12cb91a83f9b62d0a1",
+      "bytes": 2474
     },
     {
       "path": "seed/skills/fin-sector-overview/upstream/SKILL.md",
@@ -2319,8 +2389,8 @@
     },
     {
       "path": "seed/skills/fin-statistics-fundamentals/SKILL.md",
-      "sha256": "66df9f79671c848a7d1103ae69565e56dd4934ccc0462d33446b19bd1b1050ae",
-      "bytes": 2400
+      "sha256": "cdbfab7272ff4307430082795addc15ae2492dac0f28e81e6c2efde23907dc61",
+      "bytes": 2490
     },
     {
       "path": "seed/skills/fin-statistics-fundamentals/upstream/SKILL.md",
@@ -2344,8 +2414,8 @@
     },
     {
       "path": "seed/skills/fin-thesis-tracker/SKILL.md",
-      "sha256": "01a511739429f76fc5d6013c12b6c15401e2613f1110deead0aa3de2dca1cac9",
-      "bytes": 2389
+      "sha256": "c1428f773dba9a2de2a3c4ca65e7cc5e64a741570357ad6ab41543fd926203be",
+      "bytes": 2479
     },
     {
       "path": "seed/skills/fin-thesis-tracker/upstream/SKILL.md",
@@ -2364,8 +2434,8 @@
     },
     {
       "path": "seed/skills/fin-time-value-of-money/SKILL.md",
-      "sha256": "a30d415059431a19e8d470531b2f1c183ec5cbe1ffc4a2079a8865017b8d5cda",
-      "bytes": 2398
+      "sha256": "82e7a5dd39f3c424de158020037bbdca8e31bfbc9390c98d7f930666c8a4cd99",
+      "bytes": 2488
     },
     {
       "path": "seed/skills/fin-time-value-of-money/upstream/SKILL.md",
@@ -2389,8 +2459,8 @@
     },
     {
       "path": "seed/skills/fin-unit-economics/SKILL.md",
-      "sha256": "f3f68b66013355f804560f4ad99fbaea161389a161491e3c15412af6d29c9059",
-      "bytes": 2371
+      "sha256": "07a7437a6c2fa37774f627cf486113c43d5ad63acdb139d6e5a23ffdec6331e7",
+      "bytes": 2461
     },
     {
       "path": "seed/skills/fin-unit-economics/upstream/SKILL.md",
@@ -2464,8 +2534,8 @@
     },
     {
       "path": "seed/skills/数据结构化提取/SKILL.md",
-      "sha256": "96d9b5ef9620af8fdd53c4a01805e75f9ba6dd190abddb014716dc0481543c15",
-      "bytes": 15752
+      "sha256": "cc8245f776f0ff16cede1719ee05100099f03d9cebad43b8d342432ca1fe3959",
+      "bytes": 15645
     },
     {
       "path": "seed/skills/研报纠错核查/SKILL.md",
@@ -2868,6 +2938,11 @@
       "bytes": 5567
     },
     {
+      "path": "tests/conftest.py",
+      "sha256": "450d2ba3cf401a6e56ece409237e5b52b49e0b0eea1b3f192a1a0dda4f0bd5bf",
+      "bytes": 459
+    },
+    {
       "path": "tests/test_agent_efficiency.py",
       "sha256": "21ae6753b674ad57c4bea5bd16844764bc6a94cc31273805d196ab9ee09b176c",
       "bytes": 3711
@@ -2881,6 +2956,11 @@
       "path": "tests/test_announcement_extract.py",
       "sha256": "0ecfc2c2f924b13596f14269e32e3bb30299430177cb7aaef481b77aa18325dc",
       "bytes": 8933
+    },
+    {
+      "path": "tests/test_bootstrap.py",
+      "sha256": "17c677fe846129ff52c8c218fd6e5bf641290259bd2a4b5749df51be680acfee",
+      "bytes": 2272
     },
     {
       "path": "tests/test_chat_ui.cjs",

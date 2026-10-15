@@ -40,7 +40,7 @@ description: 竞赛选题①。从公告、扫描件、复杂嵌套表格中抽�
 
 | 插件 | 位置 | 提供的 MCP 工具 |
 | --- | --- | --- |
-| financial-doc-extractor 2.0 | `~/Library/Application Support/FinAgent/plugins/数据结构化提取/financial-doc-extractor/` | `parse_pdf`、`extract_tables`、`extract_financial_fields`、`list_schemas`、`validate_financial_records` |
+| financial-doc-extractor 2.0 | `integrations/financial-doc-extractor/` | `parse_pdf`、`extract_tables`、`extract_financial_fields`、`list_schemas`、`validate_financial_records` |
 
 插件已注册为 MCP 服务器（`config.json → mcp_servers`），工具以
 `mcp__financial-doc-extractor__<工具名>` 暴露：
@@ -227,8 +227,8 @@ dev 分族：`bid` F1 1.000 / `contract` 0.970（1 处 `甲方` 漏抽）/ `equi
 
 ## 参考
 
-- 插件说明：`plugins/数据结构化提取/financial-doc-extractor/README.md`
-- 验证记录：`plugins/数据结构化提取/financial-doc-extractor/VERIFICATION.md`
-- 第三方依赖：`plugins/数据结构化提取/financial-doc-extractor/THIRD_PARTY.md`
+- 插件说明：`integrations/financial-doc-extractor/README.md`
+- 验证记录：`integrations/financial-doc-extractor/VERIFICATION.md`
+- 第三方依赖：`integrations/financial-doc-extractor/THIRD_PARTY.md`
 - 本机知识库「会计口径与数据陷阱」：单位与量级、比率与每股指标、类现金口径
 - 本机知识库「竞赛要求与交付规范」：证据分级与引用规则、数据缺口与附注引用规范

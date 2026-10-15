@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,re,sys
 ROOT=Path(__file__).resolve().parents[1]
-BAD_DIRS={'data','.venv','.venv-mcp','__pycache__','.git','node_modules','exports','backups'}
+BAD_DIRS={'data','.venv','.venv-mcp','.venv-doc-mcp','__pycache__','.git','node_modules','exports','backups'}
 PATTERNS=[re.compile(r'[/]Users[/][^/\s]+/'),re.compile(r'[/]home[/][^/\s]+/'),re.compile(r'(?i)[A-Z]:\\Users\\[^\\\s]+\\'),re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'),re.compile(r'\b(?:sk-[A-Za-z0-9_-]{20,}|gh[pousr]_[A-Za-z0-9_]{30,}|github_pat_[A-Za-z0-9_]{30,})\b')]
 errors=[];checked=0
 for path in ROOT.rglob('*'):

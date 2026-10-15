@@ -1,6 +1,7 @@
 data/
 .venv/
 .venv-mcp/
+.venv-doc-mcp/
 __pycache__/
 *.py[cod]
 .pytest_cache/

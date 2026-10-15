@@ -9,7 +9,7 @@ description: 研究报告结构与证据链，用于质量评估；按需读取�
 
 这是GitHub上游技能的本地适配入口。原版及其引用/脚本完整保存在本技能目录upstream/，许可证与固定提交见LICENSE及ORIGIN.json。需要细节时用read_file读取upstream/SKILL.md，引用文件和脚本路径均相对upstream目录；不要假定原版工具名称、绝对路径或运行环境存在。
 
-本技能源码位于项目 seed/skills 下。辅助脚本使用前检查 --help，并按实际依赖创建项目独立环境；不要假定依赖已安装。浮点示例不能替代本项目 Decimal 引擎的复核。
+本技能源码位于项目 seed/skills 下。辅助脚本使用前检查 --help，运行时使用项目 .venv/bin/python（Windows 为 .venv/Scripts/python.exe）；启动器会安装 numpy、scipy、python-pptx，失败时以启动自检为准。浮点示例不能替代本项目 Decimal 引擎的复核。
 
 ## 本地流程与边界
 

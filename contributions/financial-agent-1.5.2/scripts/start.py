@@ -20,10 +20,12 @@ def main():
     args=parser.parse_args()
     if sys.version_info<(3,11):raise SystemExit('Requires Python 3.11 or newer')
     python=Path(args.python).absolute() if args.python else ROOT/'.venv'/('Scripts/python.exe' if os.name=='nt' else 'bin/python')
-    if not args.python and (not python.exists() or not (ROOT/'.venv/.ready').exists()):
-        venv.EnvBuilder(with_pip=True).create(ROOT/'.venv')
-        subprocess.run([str(python),'-m','pip','install','-r',str(ROOT/'requirements.txt')],check=True)
-        (ROOT/'.venv/.ready').touch()
+    if not args.python:
+        from bootstrap import ensure_main
+        python=ensure_main()
+    # Probe in the main environment, keeping plugin SDKs isolated.
+    subprocess.run([str(python),'-c',"import sys;sys.path.insert(0,'scripts');from bootstrap import ensure_extensions;ensure_extensions()"],cwd=ROOT,check=True,
+                   env={**os.environ,'FINAGENT_DATA_DIR':str(ROOT/'data'),'PYTHONDONTWRITEBYTECODE':'1'})
     ocr=ROOT/'server/native/finocr'
     if sys.platform=='darwin' and not ocr.exists() and shutil.which('xcrun'):
         sdk=os.environ.get('FINAGENT_MACOS_SDK')

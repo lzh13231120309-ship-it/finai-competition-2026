@@ -7,3 +7,5 @@ Original project source is provided for team review; no blanket license grant is
 - Python runtime dependencies: see requirements.txt, requirements.lock.txt and docs/dependency-licenses.json. Reproduce licenses from installed distribution metadata as needed. PyMuPDF is available under AGPL/commercial terms; no commercial license is bundled.
 - Financial knowledge documents are methodology notes with source references, not copies of user-uploaded reports or official full texts.
 - This distribution contains no Python interpreter, local model weights or third-party runtime environment binaries.
+
+- Financial document extractor 2.0: project plugin source and field schemas only; dependency notices in integrations/financial-doc-extractor/THIRD_PARTY.md. No developer environment, logs or historical inputs are included.

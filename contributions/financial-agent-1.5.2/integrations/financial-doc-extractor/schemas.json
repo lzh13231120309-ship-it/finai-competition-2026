@@ -1,0 +1,122 @@
+{
+  "pledge": {
+    "name": "股权质押",
+    "fields": {
+      "出质人": {
+        "type": "string",
+        "description": "质押股份的股东/出质人名称"
+      },
+      "质权人": {
+        "type": "string",
+        "description": "接受质押的机构/质权人名称"
+      },
+      "质押股数": {
+        "type": "string",
+        "description": "质押的股份数量（万股/股）"
+      },
+      "质押比例": {
+        "type": "string",
+        "description": "质押股份占总股本的比例"
+      },
+      "质押起始日": {
+        "type": "string",
+        "description": "质押开始日期"
+      },
+      "质押到期日": {
+        "type": "string",
+        "description": "质押结束/到期日期"
+      },
+      "质押用途": {
+        "type": "string",
+        "description": "质押融资用途"
+      }
+    }
+  },
+  "equity_change": {
+    "name": "股权变动",
+    "fields": {
+      "股东名称": {
+        "type": "string",
+        "description": "发生变动的股东名称"
+      },
+      "变动前持股": {
+        "type": "string",
+        "description": "变动前持股数量或比例"
+      },
+      "变动后持股": {
+        "type": "string",
+        "description": "变动后持股数量或比例"
+      },
+      "变动方式": {
+        "type": "string",
+        "description": "增持/减持/转让/继承等"
+      },
+      "变动日期": {
+        "type": "string",
+        "description": "股权变动日期"
+      },
+      "变动金额": {
+        "type": "string",
+        "description": "涉及的交易金额"
+      }
+    }
+  },
+  "bid_win": {
+    "name": "中标信息",
+    "fields": {
+      "项目名称": {
+        "type": "string",
+        "description": "中标项目名称"
+      },
+      "中标单位": {
+        "type": "string",
+        "description": "中标单位名称"
+      },
+      "中标金额": {
+        "type": "string",
+        "description": "中标金额（万元）"
+      },
+      "招标单位": {
+        "type": "string",
+        "description": "招标/采购单位"
+      },
+      "中标日期": {
+        "type": "string",
+        "description": "中标公示日期"
+      },
+      "项目编号": {
+        "type": "string",
+        "description": "招标项目编号"
+      }
+    }
+  },
+  "executive_change": {
+    "name": "高管变动",
+    "fields": {
+      "姓名": {
+        "type": "string",
+        "description": "高管姓名"
+      },
+      "职务": {
+        "type": "string",
+        "description": "新任/离任职务"
+      },
+      "变动类型": {
+        "type": "string",
+        "description": "任命/离任/换届"
+      },
+      "生效日期": {
+        "type": "string",
+        "description": "变动生效日期"
+      },
+      "性别": {
+        "type": "string",
+        "description": "性别"
+      },
+      "年龄": {
+        "type": "string",
+        "description": "年龄"
+      }
+    }
+  }
+}
