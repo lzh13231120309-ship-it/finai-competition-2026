@@ -1,0 +1,10 @@
+{
+  "repo": "JoelLewis/finance_skills",
+  "commit": "5c498eacf7057e31238c4c5a8012a1afe9ec7c8a",
+  "path": "plugins/wealth-management/skills/qualitative-valuation",
+  "original_name": "qualitative-valuation",
+  "license": "MIT",
+  "adapted_name": "fin-qualitative-valuation",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "1a570f892046cd9b8b3ab2dd51caf9109b36233918d977a99aaab3f8bbbf36a7"
+}

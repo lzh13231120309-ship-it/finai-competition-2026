@@ -1,0 +1,11 @@
+{
+  "provider": "DeepSeek official API",
+  "model": "deepseek-flash",
+  "mode": "balanced",
+  "synthetic_input_only": true,
+  "calculator_called": true,
+  "completed": true,
+  "result_25_percent": true,
+  "error_types": [],
+  "no_real_financial_documents_sent": true
+}

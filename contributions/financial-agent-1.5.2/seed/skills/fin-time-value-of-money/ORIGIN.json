@@ -1,0 +1,10 @@
+{
+  "repo": "JoelLewis/finance_skills",
+  "commit": "5c498eacf7057e31238c4c5a8012a1afe9ec7c8a",
+  "path": "plugins/core/skills/time-value-of-money",
+  "original_name": "time-value-of-money",
+  "license": "MIT",
+  "adapted_name": "fin-time-value-of-money",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "2a39444e2e9751a1ed3ef023baca26dc843e4dbe269a41970a08dfe0ba0fbc14"
+}

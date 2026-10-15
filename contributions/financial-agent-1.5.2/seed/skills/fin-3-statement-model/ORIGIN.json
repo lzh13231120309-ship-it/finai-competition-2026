@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/financial-analysis/skills/3-statement-model",
+  "original_name": "3-statement-model",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-3-statement-model",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "bc2aeb423a3cc9e6ab973dcc4e3c6682427c751e20d8b3a0eec057eab67b1e83"
+}

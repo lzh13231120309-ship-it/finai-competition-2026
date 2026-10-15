@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/private-equity/skills/ic-memo",
+  "original_name": "ic-memo",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-ic-memo",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "62ab741880a946ab3e738b1f1514cb44b4e8b4f8b1d2e7b42c1e1ba5fcbb417f"
+}

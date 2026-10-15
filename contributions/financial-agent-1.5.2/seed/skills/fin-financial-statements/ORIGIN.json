@@ -1,0 +1,10 @@
+{
+  "repo": "JoelLewis/finance_skills",
+  "commit": "5c498eacf7057e31238c4c5a8012a1afe9ec7c8a",
+  "path": "plugins/wealth-management/skills/financial-statements",
+  "original_name": "financial-statements",
+  "license": "MIT",
+  "adapted_name": "fin-financial-statements",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "7719ec086a7bf98a5317461ce2d33eab41813ec2574010bf9cca3dde1f22c55e"
+}

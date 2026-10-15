@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/equity-research/skills/thesis-tracker",
+  "original_name": "thesis-tracker",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-thesis-tracker",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "6b4ce2967c5e01c6b42f5c140fa1e94dee2713b5d2de3eb71957ff5a5c11469b"
+}

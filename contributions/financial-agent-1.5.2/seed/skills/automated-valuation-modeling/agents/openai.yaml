@@ -1,0 +1,4 @@
+interface:
+  display_name: "自动化估值建模"
+  short_description: "复用已核验财报，构建可编辑估值模型并检查市场输入、终值及情景假设"
+  default_prompt: "使用 $automated-valuation-modeling 基于已有财务分析构建可编辑估值模型，说明缺失数据与关键假设。"

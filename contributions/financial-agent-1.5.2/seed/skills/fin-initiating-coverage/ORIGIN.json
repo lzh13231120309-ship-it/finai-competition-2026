@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/equity-research/skills/initiating-coverage",
+  "original_name": "initiating-coverage",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-initiating-coverage",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "9d21c6e460bc3692e19eeda6dc6d425a704b21243bd28af7f13b6f1dd888ed63"
+}

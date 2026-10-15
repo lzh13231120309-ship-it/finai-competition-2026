@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/private-equity/skills/dd-checklist",
+  "original_name": "dd-checklist",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-dd-checklist",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "f2a8210587b7595fa642e8457b197ede9fa2ce4eb9f71bb25a26e7d707eddf8c"
+}

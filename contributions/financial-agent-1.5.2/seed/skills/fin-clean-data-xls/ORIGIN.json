@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/financial-analysis/skills/clean-data-xls",
+  "original_name": "clean-data-xls",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-clean-data-xls",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "f0dfceb01532a637b0edbbe15dbab9fe2d52279b140cea4ba8ba7823e46ad15b"
+}

@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/financial-analysis/skills/comps-analysis",
+  "original_name": "comps-analysis",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-comps-analysis",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "2d49d9d694297da6ca3b084564ce10ed496f4ff21f275dae6b6c50d7b4dd889a"
+}

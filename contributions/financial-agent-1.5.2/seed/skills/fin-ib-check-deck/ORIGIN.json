@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/financial-analysis/skills/ib-check-deck",
+  "original_name": "ib-check-deck",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-ib-check-deck",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "ddb30ad936035f2bb71acdc1dbf723663e74a3d2aba640f7bb84e6007f3210c1"
+}

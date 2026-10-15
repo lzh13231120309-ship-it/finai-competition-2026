@@ -1,0 +1,10 @@
+{
+  "repo": "JoelLewis/finance_skills",
+  "commit": "5c498eacf7057e31238c4c5a8012a1afe9ec7c8a",
+  "path": "plugins/data-integration/skills/reference-data",
+  "original_name": "reference-data",
+  "license": "MIT",
+  "adapted_name": "fin-reference-data",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "d05da4d8ecfd594f8baf1f2b05c8ab9a63d28c9d9d30b9fe0350bb93577db7a7"
+}
