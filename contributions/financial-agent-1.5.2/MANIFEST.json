@@ -29,8 +29,8 @@
     },
     {
       "path": "docs/发布验收.md",
-      "sha256": "abd10001ef6939a948419a170d0108ef7f0b34268f9413321e39cad170127524",
-      "bytes": 2117
+      "sha256": "c5359073fa2df8735cb5ae640b1ec19f99d75a5deef321cd9fd960ebf7a9c723",
+      "bytes": 2170
     },
     {
       "path": "docs/真实模型开发案例.json",
@@ -61,6 +61,11 @@
       "path": "integrations/excel-mcp/README.md",
       "sha256": "7857f3cde9a9de8ca8533d6ddc777691b293e1203025c72e996e656eaaeccb44",
       "bytes": 17290
+    },
+    {
+      "path": "integrations/excel-mcp/pyproject.toml",
+      "sha256": "08a85ffaa09c7724df6cdfb3dca761d3324216f15dcddfd8cee2b8585e8a1f5d",
+      "bytes": 2584
     },
     {
       "path": "integrations/excel-mcp/src/excel_mcp/__init__.py",
