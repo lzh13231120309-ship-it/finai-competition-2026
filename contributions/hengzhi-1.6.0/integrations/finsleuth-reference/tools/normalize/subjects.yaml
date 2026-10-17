@@ -1,0 +1,158 @@
+# 科目别名词典：A股财报口径的最小可用子集
+# 匹配级联顺序：excludes 优先 -> 精确别名 -> 归一化别名 -> 前缀/正则 -> 模糊
+# 每条都要写 exclude，因为报表里最容易误配的就是「其他应收款」「应收账款融资」这类近似词。
+
+- code: CASH
+  standard_name: 货币资金
+  statement: BS
+  aliases: [货币资金, 现金及现金等价物, 库存现金及银行存款]
+  patterns: ["^货币资金$"]
+  excludes: [使用受限, 受限资金, 等价物净增加额]
+  tieout_group: [CF_CASH]
+
+- code: AR
+  standard_name: 应收账款
+  statement: BS
+  aliases: [应收账款, 应收款项, 应收账款净额, 应收账款账面价值, 应收账款账面余额]
+  patterns: ["^应收(账款|款项)(净额|账面价值|账面余额)?$"]
+  excludes: [应收票据, 应收账款融资, 应收款项融资, 其他应收款, 坏账准备, 减值准备, 账龄]
+
+- code: NOTES_RECV
+  standard_name: 应收票据
+  statement: BS
+  aliases: [应收票据, 应收票据净额]
+  patterns: ["^应收票据"]
+  excludes: [应收款项融资]
+
+- code: AR_FIN
+  standard_name: 应收款项融资
+  statement: BS
+  aliases: [应收款项融资, 应收账款融资]
+  patterns: ["^应收(账款|款项)融资$"]
+  excludes: []
+
+- code: OTHER_RECV
+  standard_name: 其他应收款
+  statement: BS
+  aliases: [其他应收款, 其他应收款项]
+  patterns: ["^其他应收款"]
+  excludes: [坏账准备]
+
+- code: INVENTORY
+  standard_name: 存货
+  statement: BS
+  aliases: [存货, 存货净额]
+  patterns: ["^存货(净额)?$"]
+  excludes: [跌价准备, 减值准备]
+
+- code: CONTRACT_ASSET
+  standard_name: 合同资产
+  statement: BS
+  aliases: [合同资产]
+  patterns: ["^合同资产"]
+  excludes: []
+
+- code: CURRENT_ASSETS
+  standard_name: 流动资产合计
+  statement: BS
+  aliases: [流动资产合计, 流动资产总计]
+  patterns: ["^流动资产(合计|总计)$"]
+  excludes: [非流动]
+
+- code: ASSETS_TOTAL
+  standard_name: 资产总计
+  statement: BS
+  aliases: [资产总计, 资产合计, 总资产]
+  patterns: ["^(资产总计|资产合计)$"]
+  excludes: [非流动, 流动, 母公司]
+
+- code: LIAB_TOTAL
+  standard_name: 负债合计
+  statement: BS
+  aliases: [负债合计, 负债总计, 总负债]
+  patterns: ["^负债(合计|总计)$"]
+  excludes: [流动, 非流动, 母公司]
+
+- code: CURRENT_LIAB
+  standard_name: 流动负债合计
+  statement: BS
+  aliases: [流动负债合计, 流动负债总计]
+  patterns: ["^流动负债(合计|总计)$"]
+  excludes: []
+
+- code: EQUITY_TOTAL
+  standard_name: 所有者权益合计
+  statement: BS
+  aliases: [所有者权益合计, 股东权益合计, 所有者权益（或股东权益）合计, 归属于母公司所有者权益合计]
+  patterns: ["^(所有者权益|股东权益).*(合计|总计)$"]
+  excludes: [负债和, 少数股东]
+
+- code: RETAINED
+  standard_name: 未分配利润
+  statement: BS
+  aliases: [未分配利润, 未分配利润(未弥补亏损)]
+  patterns: ["^未分配利润"]
+  excludes: []
+
+- code: REVENUE
+  standard_name: 营业收入
+  statement: IS
+  aliases: [营业收入, 营业总收入, 主营业务收入]
+  patterns: ["^营业(总)?收入$"]
+  excludes: [成本, 外]
+
+- code: COST
+  standard_name: 营业成本
+  statement: IS
+  aliases: [营业成本, 营业总成本, 主营业务成本]
+  patterns: ["^营业(总)?成本$"]
+  excludes: [税金]
+
+- code: NET_PROFIT
+  standard_name: 净利润
+  statement: IS
+  aliases: [净利润, 五、净利润, 净利润（净亏损）]
+  patterns: ["净利润(（净亏损）)?$"]
+  excludes: [归属于母公司, 母公司股东, 扣除非经常性, 少数股东]
+
+- code: NET_PROFIT_PARENT
+  standard_name: 归属于母公司股东的净利润
+  statement: IS
+  aliases: [归属于母公司股东的净利润, 归属于母公司所有者的净利润, 归母净利润]
+  patterns: ["归属于母公司.*净利润"]
+  excludes: [少数股东]
+
+- code: RD_EXPENSE
+  standard_name: 研发费用
+  statement: IS
+  aliases: [研发费用, 研发支出]
+  patterns: ["^研发(费用|支出)"]
+  excludes: [资本化, 开发支出]
+
+- code: CFO
+  standard_name: 经营活动产生的现金流量净额
+  statement: CF
+  aliases: [经营活动产生的现金流量净额, 经营活动现金流量净额, 经营活动产生的现金流量净额（小计）]
+  patterns: ["经营活动.*现金流量净额"]
+  excludes: [投资, 筹资, 母公司]
+
+- code: CASH_END
+  standard_name: 期末现金及现金等价物余额
+  statement: CF
+  aliases: [期末现金及现金等价物余额, 六、期末现金及现金等价物余额, 现金及现金等价物期末余额]
+  patterns: ["期末现金.*余额"]
+  excludes: [期初]
+
+- code: CASH_BEGIN
+  standard_name: 期初现金及现金等价物余额
+  statement: CF
+  aliases: [期初现金及现金等价物余额, 现金及现金等价物期初余额]
+  patterns: ["期初现金.*余额"]
+  excludes: [期末]
+
+- code: CAPEX
+  standard_name: 购建固定资产、无形资产和其他长期资产支付的现金
+  statement: CF
+  aliases: [购建固定资产、无形资产和其他长期资产支付的现金, 购建固定资产无形资产和其他长期资产支付的现金]
+  patterns: ["购建固定资产.*支付的现金"]
+  excludes: [处置, 收回]
