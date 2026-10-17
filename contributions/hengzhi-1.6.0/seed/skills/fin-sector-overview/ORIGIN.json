@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/equity-research/skills/sector-overview",
+  "original_name": "sector-overview",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-sector-overview",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "8d4b7b47c3fe1591bde0a4260b1ffbe489e7ddbe3eddd3dbeb046ce29f315608"
+}

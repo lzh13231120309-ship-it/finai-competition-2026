@@ -1,0 +1,4 @@
+interface:
+  display_name: "金融文档结构化提取"
+  short_description: "从财报与公告抽取字段，保留来源证据、数据口径和待核验事项"
+  default_prompt: "使用 $financial-structured-extraction 提取我提供的金融文档字段，并交付带证据的结构化数据和待核验清单。"

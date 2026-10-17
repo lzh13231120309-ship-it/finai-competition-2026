@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/equity-research/skills/earnings-analysis",
+  "original_name": "earnings-analysis",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-earnings-analysis",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "4db857c27a53141b6ebc38ec9ee7f0020dec59cab084ae6753e53366d118c8ee"
+}

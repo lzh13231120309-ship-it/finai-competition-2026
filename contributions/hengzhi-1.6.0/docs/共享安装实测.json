@@ -1,0 +1,32 @@
+{
+  "fresh_install": true,
+  "http_health": true,
+  "skills_loaded": 35,
+  "knowledge_bases": 9,
+  "knowledge_search_responded": true,
+  "icon_available": true,
+  "no_preconfigured_keys": true,
+  "system_access_default_off": true,
+  "mcp": [
+    {
+      "name": "financial-doc-extractor",
+      "connected": true,
+      "tools": 5,
+      "sample_call_passed": true
+    },
+    {
+      "name": "fin-excel-audit",
+      "connected": true,
+      "tools": 7,
+      "sample_call_passed": true
+    }
+  ],
+  "platform": "macOS ARM64 / Python 3.13",
+  "cloud_model_tested": false,
+  "windows_tested": false,
+  "skill_resource_directories": 37,
+  "retired_skill_directories": 2,
+  "knowledge_search_hits": 3,
+  "knowledge_notes": 141,
+  "restart_reused_installed_environments": true
+}

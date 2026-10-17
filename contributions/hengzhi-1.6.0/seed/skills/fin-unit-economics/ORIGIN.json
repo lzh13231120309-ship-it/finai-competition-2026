@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/private-equity/skills/unit-economics",
+  "original_name": "unit-economics",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-unit-economics",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "e2d1493ca6d312723eb60132ec0ab155d8c763761fd47a5af79ca93a701d6ac3"
+}

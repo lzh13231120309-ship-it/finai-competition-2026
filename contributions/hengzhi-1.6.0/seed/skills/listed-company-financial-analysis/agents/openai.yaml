@@ -1,0 +1,4 @@
+interface:
+  display_name: "上市公司财务分析"
+  short_description: "核对三张报表与指标口径，交付带证据的财务分析及待核验事项"
+  default_prompt: "使用 $listed-company-financial-analysis 分析我提供的上市公司财报，核对数据口径并导出带证据的报告。"

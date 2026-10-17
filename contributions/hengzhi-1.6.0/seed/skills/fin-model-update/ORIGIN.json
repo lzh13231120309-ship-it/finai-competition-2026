@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/equity-research/skills/model-update",
+  "original_name": "model-update",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-model-update",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "62b2256bf3b52ac3759cb446a10aaa3066a51b4909e09bae0e3b98b741a37fb5"
+}

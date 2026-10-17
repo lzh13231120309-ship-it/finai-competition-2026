@@ -1,0 +1,10 @@
+{
+  "source_package_version": "1.5.2",
+  "clean_start_success": true,
+  "no_keys_preconfigured": true,
+  "system_access_disabled": true,
+  "ocr_compiled_on_receiving_machine": true,
+  "own_project_data_only": true,
+  "skills_endpoint_ok": true,
+  "knowledge_endpoint_ok": true
+}

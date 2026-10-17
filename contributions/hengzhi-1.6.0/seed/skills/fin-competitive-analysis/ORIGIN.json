@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/financial-analysis/skills/competitive-analysis",
+  "original_name": "competitive-analysis",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-competitive-analysis",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "65c6e2a68ba67660076e1f5b7d3602f71b3e97d3cdc1f2a6b03c12c05c24f1f9"
+}

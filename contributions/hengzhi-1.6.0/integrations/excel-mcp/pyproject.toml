@@ -1,0 +1,100 @@
+[project]
+name = "excel-mcp-server"
+version = "2.0.0"
+description = "MCP server for creating, reading and editing Excel workbooks without Microsoft Excel"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Haris Musa", email = "haris.musa@outlook.com" }]
+requires-python = ">=3.11"
+keywords = [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "excel",
+    "xlsx",
+    "xlsm",
+    "spreadsheet",
+    "openpyxl",
+    "charts",
+    "pivot-table",
+    "formulas",
+    "vba",
+    "llm",
+    "ai",
+    "claude",
+    "cursor",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Office/Business",
+    "Topic :: Office/Business :: Financial :: Spreadsheet",
+    "Typing :: Typed",
+]
+dependencies = [
+    "mcp>=2.2,<3",
+    "olefile>=0.47,<1",
+    "openpyxl>=3.1.5,<4",
+    "pillow>=12,<13",
+    "pydantic>=2.12,<3",
+    "starlette>=1,<2",
+    "uvicorn>=0.31,<1",
+]
+
+[project.urls]
+Homepage = "https://github.com/haris-musa/excel-mcp-server"
+Documentation = "https://github.com/haris-musa/excel-mcp-server/blob/main/TOOLS.md"
+Changelog = "https://github.com/haris-musa/excel-mcp-server/blob/main/CHANGELOG.md"
+Issues = "https://github.com/haris-musa/excel-mcp-server/issues"
+
+[project.scripts]
+excel-mcp-server = "excel_mcp.cli:main"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.414",
+    "pytest>=9.1",
+    "pytest-timeout>=2.4.0",
+    "ruff>=0.16",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "RUF", "N", "PTH", "C4", "PIE", "RET", "TID"]
+
+[tool.pyright]
+include = ["src", "tests"]
+pythonVersion = "3.11"
+typeCheckingMode = "standard"
+extraPaths = ["scripts"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["scripts"]
+addopts = ["--strict-markers", "--strict-config"]
+filterwarnings = [
+    "error",
+    # openpyxl says it drops sheet extensions; the package layer keeps them.
+    "ignore:.* extension is not supported and will be removed:UserWarning",
+]
+faulthandler_timeout = 60
+timeout = 120
+
+[tool.uv.build-backend]
+module-name = "excel_mcp"

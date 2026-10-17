@@ -1,0 +1,10 @@
+{
+  "repo": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "path": "plugins/vertical-plugins/financial-analysis/skills/dcf-model",
+  "original_name": "dcf-model",
+  "license": "Apache-2.0",
+  "adapted_name": "fin-dcf-model",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "2bb3ed672ab2fa76f8820ee919b158a67dc6df10e7052eeb661599140a9a2494"
+}

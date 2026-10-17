@@ -1,0 +1,10 @@
+{
+  "repo": "JoelLewis/finance_skills",
+  "commit": "5c498eacf7057e31238c4c5a8012a1afe9ec7c8a",
+  "path": "plugins/data-integration/skills/data-quality",
+  "original_name": "data-quality",
+  "license": "MIT",
+  "adapted_name": "fin-data-quality",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "3a5b82c32aff87d5c588ede04ad9b78c23a9e1cda765c5b1f8c7994f02c25e09"
+}

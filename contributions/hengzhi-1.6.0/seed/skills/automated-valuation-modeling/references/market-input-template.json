@@ -1,0 +1,48 @@
+{
+  "currency": null,
+  "as_of": null,
+  "source": null,
+  "template_retrieved_at": "2026-10-10",
+  "risk_free_rate": {
+    "value": null, "currency": null, "as_of": null,
+    "source": null, "source_url": null, "method": null,
+    "tenor": null, "status": "missing", "evidence_ids": []
+  },
+  "equity_risk_premium": {
+    "value": null, "currency": null, "as_of": null,
+    "source": null, "source_url": null, "method": null,
+    "market_exposure": null, "status": "missing", "evidence_ids": []
+  },
+  "beta": {
+    "value": null, "currency": null, "as_of": null,
+    "source": null, "source_url": null, "method": null,
+    "benchmark": null, "period": null, "return_frequency": null,
+    "standard_error": null, "status": "missing", "evidence_ids": []
+  },
+  "cost_of_debt": {
+    "value": null, "currency": null, "as_of": null,
+    "source": null, "source_url": null, "method": null,
+    "tax_basis": "pre_tax", "status": "missing", "evidence_ids": []
+  },
+  "debt_weight": {
+    "value": null, "currency": null, "as_of": null,
+    "source": null, "source_url": null, "method": null,
+    "capital_basis": "market_value_or_disclosed_proxy",
+    "status": "missing", "evidence_ids": []
+  },
+  "country_risk_premium": {
+    "value": null, "currency": null, "as_of": null,
+    "source": null, "source_url": null, "method": null,
+    "status": "missing", "evidence_ids": []
+  },
+  "price": {
+    "value": null, "currency": null, "as_of": null,
+    "source": null, "source_url": null, "method": null,
+    "symbol": null, "stock_class": null, "status": "missing", "evidence_ids": []
+  },
+  "shares": {
+    "value": null, "currency": null, "as_of": null,
+    "source": null, "source_url": null, "method": null,
+    "share_basis": null, "status": "missing", "evidence_ids": []
+  }
+}

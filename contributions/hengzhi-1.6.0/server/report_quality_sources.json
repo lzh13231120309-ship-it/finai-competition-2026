@@ -1,0 +1,235 @@
+[
+  {
+    "id": "reports-cfa-va",
+    "title": "CFA Standard V(A) Diligence and Reasonable Basis",
+    "url": "https://www.cfainstitute.org/standards/professionals/code-ethics-standards/standards-of-practice-v-a",
+    "authority": "CFA Institute",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "研报核查的对象与结论边界",
+      "原始证据层级与来源独立性",
+      "期间、频率和滚动口径核查",
+      "来源时效、版本与事后信息",
+      "因果、相关与叙事逻辑核查",
+      "样本选择、幸存者偏差与分母完整性",
+      "回测中的前视、过拟合与交易约束",
+      "模型透明性与可复现性核查",
+      "估值假设与经济逻辑交叉检查",
+      "敏感性、情景与反证设计",
+      "Beneish与Altman模型的适用性边界",
+      "质量评分建议及权重解释"
+    ],
+    "limitations": "用于方法原则参考，具体适用对象、修订与生效日期须按原文及目标法域核对；不代表中国赛事规则。"
+  },
+  {
+    "id": "reports-cfa-vb",
+    "title": "CFA Standard V(B) Communication with Clients and Prospective Clients",
+    "url": "https://www.cfainstitute.org/standards/professionals/code-ethics-standards/standards-of-practice-v-b",
+    "authority": "CFA Institute",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "研报核查的对象与结论边界",
+      "事实、预测、指引与投资意见分离",
+      "评级、目标价与收益空间的一致性",
+      "质量评分建议及权重解释",
+      "缺失数据、不确定性与覆盖率",
+      "报告等级与可解释的最终核查结论"
+    ],
+    "limitations": "用于方法原则参考，具体适用对象、修订与生效日期须按原文及目标法域核对；不代表中国赛事规则。"
+  },
+  {
+    "id": "reports-cfa-vc",
+    "title": "CFA Standard V(C) Record Retention",
+    "url": "https://www.cfainstitute.org/standards/professionals/code-ethics-standards/standards-of-practice-v-c",
+    "authority": "CFA Institute",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "证据编号和主张映射",
+      "来源时效、版本与事后信息",
+      "模型透明性与可复现性核查",
+      "严重失败项与报告真实性检查",
+      "本地抽取核验流水线与职责分离",
+      "结构化核查结果的JSON约束"
+    ],
+    "limitations": "用于方法原则参考，具体适用对象、修订与生效日期须按原文及目标法域核对；不代表中国赛事规则。"
+  },
+  {
+    "id": "reports-cfa-via",
+    "title": "CFA Standard VI(A) Avoid or Disclose Conflicts",
+    "url": "https://www.cfainstitute.org/standards/professionals/code-ethics-standards/standards-of-practice-vi-a",
+    "authority": "CFA Institute",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "利益冲突和客观性披露"
+    ],
+    "limitations": "用于方法原则参考，具体适用对象、修订与生效日期须按原文及目标法域核对；不代表中国赛事规则。"
+  },
+  {
+    "id": "reports-cfa-ros",
+    "title": "CFA Analyst Research Process（Research Objectivity Standards官方立场摘要）",
+    "url": "https://rpc.cfainstitute.org/policy/positions/analyst-research-process",
+    "authority": "CFA Institute",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "利益冲突和客观性披露",
+      "评级、目标价与收益空间的一致性"
+    ],
+    "limitations": "取得2018年官方立场页，页面总结Research Objectivity Standards，但全文链接失效；不声称已取得ROS完整现行文本。"
+  },
+  {
+    "id": "reports-pcaob1105",
+    "title": "PCAOB AS 1105 Audit Evidence",
+    "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS1105",
+    "authority": "PCAOB",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "原始证据层级与来源独立性",
+      "证据编号和主张映射",
+      "PDF与OCR抽取后的双重验证",
+      "充分适当证据与支持反证平衡",
+      "严重失败项与报告真实性检查"
+    ],
+    "limitations": "适用PCAOB审计背景；网页可能含不同生效时期修订，使用具体条文须核对适用审计年度；不是中国法定审计准则。"
+  },
+  {
+    "id": "reports-pcaob2401",
+    "title": "PCAOB AS 2401 Consideration of Fraud in a Financial Statement Audit",
+    "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2401",
+    "authority": "PCAOB",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "审计意见与舞弊鉴证的区别",
+      "盈利质量与现金支持检查",
+      "收入、应收和合同资产红旗核查",
+      "存货、减值和资本化异常检查"
+    ],
+    "limitations": "适用PCAOB审计背景；网页可能含不同生效时期修订，使用具体条文须核对适用审计年度；不是中国法定审计准则。"
+  },
+  {
+    "id": "reports-pcaob2810",
+    "title": "PCAOB AS 2810 Evaluating Audit Results",
+    "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2810",
+    "authority": "PCAOB",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "充分适当证据与支持反证平衡",
+      "重要性、差错分级与修订建议",
+      "报告等级与可解释的最终核查结论"
+    ],
+    "limitations": "适用PCAOB审计背景；网页可能含不同生效时期修订，使用具体条文须核对适用审计年度；不是中国法定审计准则。"
+  },
+  {
+    "id": "reports-pcaob3101",
+    "title": "PCAOB AS 3101 The Auditor's Report on an Audit of Financial Statements When the Auditor Expresses an Unqualified Opinion",
+    "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS3101",
+    "authority": "PCAOB",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "审计意见与舞弊鉴证的区别",
+      "债务、流动性与表外义务核查"
+    ],
+    "limitations": "适用PCAOB审计背景；网页可能含不同生效时期修订，使用具体条文须核对适用审计年度；不是中国法定审计准则。"
+  },
+  {
+    "id": "reports-pcaob2410",
+    "title": "PCAOB AS 2410 Related Parties",
+    "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2410",
+    "authority": "PCAOB",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "关联方、交易实质与资金占用线索"
+    ],
+    "limitations": "适用PCAOB审计背景；网页可能含不同生效时期修订，使用具体条文须核对适用审计年度；不是中国法定审计准则。"
+  },
+  {
+    "id": "reports-pcaob2501",
+    "title": "PCAOB AS 2501 Auditing Accounting Estimates Including Fair Value Measurements",
+    "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2501",
+    "authority": "PCAOB",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "估值假设与经济逻辑交叉检查",
+      "敏感性、情景与反证设计",
+      "存货、减值和资本化异常检查"
+    ],
+    "limitations": "适用PCAOB审计背景；网页可能含不同生效时期修订，使用具体条文须核对适用审计年度；不是中国法定审计准则。"
+  },
+  {
+    "id": "reports-sec-nongaap",
+    "title": "SEC Non-GAAP Financial Measures Compliance and Disclosure Interpretations",
+    "url": "https://www.sec.gov/rules-regulations/staff-guidance/corporation-finance-interpretations/non-gaap-financial-measures",
+    "authority": "U.S. SEC",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "盈利质量与现金支持检查",
+      "非GAAP、调整后指标与自定义KPI"
+    ],
+    "limitations": "SEC工作人员解释具有美国监管背景；不将其机械作为所有中国企业的法定义务。"
+  },
+  {
+    "id": "reports-bcbs",
+    "title": "Basel Framework SRP36 Risk data aggregation and risk reporting",
+    "url": "https://www.bis.org/committees/bcbs/basel-framework/standard/srp/36/inforce/2019-12-15/published/2019-12-15",
+    "authority": "BCBS / BIS",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "PDF与OCR抽取后的双重验证",
+      "数字复算与四舍五入容差",
+      "单位、币种和合并范围核查",
+      "债务、流动性与表外义务核查",
+      "缺失数据、不确定性与覆盖率",
+      "本地抽取核验流水线与职责分离",
+      "结构化核查结果的JSON约束"
+    ],
+    "limitations": "原框架针对系统重要性银行；本库数据流程只是借鉴原则，不将其扩展成所有研报的监管义务。"
+  },
+  {
+    "id": "reports-csrc",
+    "title": "中国证监会2010年第28号公告：发布证券研究报告暂行规定（历史发布页）",
+    "url": "https://www.csrc.gov.cn/csrc/c101838/c1022037/content.shtml",
+    "authority": "中国证监会",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "利益冲突和客观性披露"
+    ],
+    "limitations": "核验的是2010年第28号公告历史发布页与附件入口，未据此验证所有现行修订；不得声称该页就是2026年完整现行法。"
+  },
+  {
+    "id": "reports-beneish",
+    "title": "Beneish 1999 The Detection of Earnings Manipulation（论文发布页）",
+    "url": "https://rpc.cfainstitute.org/research/financial-analysts-journal/1999/the-detection-of-earnings-manipulation",
+    "authority": "CFA Institute / Financial Analysts Journal",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "Beneish与Altman模型的适用性边界"
+    ],
+    "limitations": "核验官方论文题录和摘要，未取得全文全部变量、系数、样本定义；不提供通用阈值或舞弊概率。"
+  },
+  {
+    "id": "reports-altman",
+    "title": "Altman 2002 Corporate Distress Prediction Models in a Turbulent Economic and Basel II Environment（NYU题录与摘要）",
+    "url": "https://archive.nyu.edu/handle/2451/26762",
+    "authority": "Edward I. Altman / NYU Faculty Digital Archive",
+    "checked_at": "2026-10-11",
+    "status": "verified_content",
+    "topics": [
+      "Beneish与Altman模型的适用性边界"
+    ],
+    "limitations": "核验作者、题录及摘要，摘要强调模型只能作为附加工具；未据此核验全文全部变量和版本阈值，不输出通用截点或舞弊概率。"
+  }
+]

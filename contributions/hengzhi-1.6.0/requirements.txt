@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+httpx
+python-multipart
+openpyxl
+python-docx
+python-pptx
+pypdf
+Pillow
+reportlab
+matplotlib
+PyMuPDF==1.28.2
+pdfplumber==0.11.10
+xlsxwriter
+
+yfinance==1.7.0

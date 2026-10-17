@@ -1,0 +1,10 @@
+{
+  "repo": "JoelLewis/finance_skills",
+  "commit": "5c498eacf7057e31238c4c5a8012a1afe9ec7c8a",
+  "path": "plugins/core/skills/statistics-fundamentals",
+  "original_name": "statistics-fundamentals",
+  "license": "MIT",
+  "adapted_name": "fin-statistics-fundamentals",
+  "installed_at": "2026-10-12",
+  "upstream_sha256": "f9c40377bf1a1e400b57746dba396e466f47c8221c09e8ea56f19c32f56e9802"
+}
